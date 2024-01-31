@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiko&family=Pompiere&family=Poppins:wght@500&family=Rambla:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+        }
+        footer {
+            background-color: #FFA500;
+            color: white;
+            font-family: 'Rambla', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 655px;
+        }
+        .footer_word {
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+            gap: 169px;
+            margin-left: 115px;
+        }
+        .footer_three {
+            display: flex;
+            gap: 19px;
+        }
+        p.footer_e {
+            font-size: 16px;
+        }
+        p.footer_e {
+            margin-top: 17px;
+        }
+        p.footer_h {
+            margin-bottom: 0;
+            font-size: 30px;
+        }
+
+        /*Contact*/
+
+        contact {
+            font-family: 'Amiko', sans-serif;
+            background-image: url(./Contac_bg.png);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+        .contact_h>h1 {
+            font-size: 100px;
+            margin-left: 72px;
+            margin-top: 65px;
+            margin-bottom: 74px;
+        }
+        .contact_bottom {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            margin-left: 72px;
+            gap: 92px;
+            align-items: baseline;
+            margin-bottom: 29px;
+        }
+        .contact_left {
+            font-size: 24px;
+        }
+        .contact_details {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .name_mail {
+            display: flex;
+            gap: 93px;
+        }
+        .contact_number {
+            color: #FFA500;
+            font-size: 40px;
+        }
+        .contact_address {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            gap: 59px;
+        }
+        .contact_address .contact_p {
+            color: #737373;
+        }
+        .contact_address>div>h6, .contact_address>div>p {
+            margin: 0;
+        }
+        .contact_submit {
+            font-size: 16px;
+            margin-left: 490px;
+            margin-top: 65px;
+            width: 193px;
+            height: 58px;
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            background-color: #FFA500;
+        }
+        .contact_submit:hover {
+            background-color: black;
+        }
+        .packers {
+            margin: 0;
+            width: 100%;
+        }
+        #message {
+            margin-top: 30px;
+        }
+
+        /*middle*/
+        middle {
+            display: flex;
+            justify-content: space-around;
+            padding: 74px 0px 74px 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        middle>div>p {
+            text-align: center;
+            font-size: 24px;
+            margin: 0;
+        }
+        middle>div {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        /*header*/
+        header {
+            background:linear-gradient(0deg, rgba(0, 50, 86, 0.9), rgba(0, 50, 86, 0.9)), url(bg.png);
+            background-size: cover;
+        }
+        .titlebar {
+            display: flex;
+            gap: 292px;
+            align-items: center;
+        }
+        nav {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            gap: 27px;
+            margin-top: 20px;
+        }
+        nav>p:hover {
+            color: black;
+        }
+        span {
+            color: #FFA500;
+        }
+        header>div>img {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .content {
+            color: white;
+            font-family: 'Pompiere', sans-serif;
+            width: 667px;
+            margin-left: 43px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        #difference {
+            font-size: 100px;
+            margin: 0%;
+            margin-top: 161px;
+        }
+        #loremipsum {
+            width: 465px;
+            font-size: 24px;
+            margin: 0px;
+        }
+        #joinus {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            background-color: #FFA500;
+            border-radius: 12px;
+            padding: 20px 42px;
+        }
+        #joinus:hover {
+            background-color: black;
+        }
+        .header_images {
+            display: flex;
+            flex-direction: column;
+            width: 590px;
+            gap: 74px;
+            margin-left: 40px;
+            margin-top: 161px;
+        }
+        .header_images_bottom {
+            display: flex;
+            gap: 65px;
+            width: 260px;
+        }
+        .header_body {
+            display: inline-flex;
+        }
+        .search {
+            display: flex;
+            width: 302px;
+            height: 28px;
+        }
+        .search>button {
+            background-color:#0F4871;
+        }
+        heroes {
+            font-family: 'Pompiere', sans-serif;
+        }
+        #loremipsum2 {
+            color: #0F4871;
+            font-size: 18px;
+            margin-left: 41px;
+            width: 421px;
+        }
+        heroes span {
+            font-size: 100px;
+            margin-left: 41px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="titlebar">
+            <img src="./logo.png" src="FHOO logo">
+            <nav>
+                <p><span>HOME</span></p>            
+                <p>HEALTH</p>
+                <p>EDUCATION</p>
+                <p>VIRTUAL PET</p>
+                <p>LAUNCH REQUEST</p>
+                <div class="search">
+                    <input type="search" placeholder="Search...">
+                    <button><img src="./Group 7031.png"></button>
+                </div>
+            </nav>
+        </div>
+        <div class="header_body">
+            <div class="content">
+                <p id="difference">Let's make a difference <span>together</span></p>
+                <p id="loremipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet nibh vivamus aliquam velit. Duis egestas pulvinar amet cursus non nunc leo in nisl. In cum sed leo, arcu, enim neque sem amet tellus. </p>
+                <p id="joinus">JOIN US</p>
+            </div>
+            <div class="header_images">
+                <img src="./Rectangle 6.png">
+                <div class="header_images_bottom">
+                    <img src="./Rectangle 7.png">
+                    <img src="./Rectangle 8.png">
+                </div>
+            </div>
+        </div>
+    </header>
+    <heroes>
+        <p><span>OUR HEROES</span></p>
+        <p id="loremipsum2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae pharetra consectetur nibh. Varius porttitor dui quam nulla egestas vestibulum. Posuere eget ultricies porttitor pulvinar. Lectus ipsum cras nulla massa mi.</p>
+    </heroes>
+    <middle>
+        <div class="house">
+            <img src="./Home.png" alt="Home logo">
+            <p>10M+ Lives</p> 
+            <p>Rescued</p>
+        </div>
+        <div class="fund">
+            <img src="./la_donate.png" alt="Fund logo">
+            <p>10M+ Funds</p>
+            <p>Raised</p>
+        </div>
+        <div class="voluteers">
+            <img src="./Volunteers.png" alt="Volunteers logo">
+            <p>10k+</p>
+            <p>volunteers</p>
+        </div>
+    </middle>
+    <img src="./Rectangle 25.png" alt="Donation" class="packers">
+    <contact>
+        <div class="contact_top">
+            <div class="contact_h">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+        <div class="contact_bottom">
+            <div class="contact_left">
+                <div class="contact_details">
+                    <div class="name_mail">
+                        <div id="name">
+                            <p>Name</p>
+                            <img src="./Line 1.png" alt="Line">
+                        </div>
+                        <div id="email">
+                            <p>Email Address</p>
+                            <img src="./Line 2.png" alt="Line">
+                        </div>
+                    </div>
+                    <div id="message">
+                        <p class="contact_message">Message</p>
+                        <img src="./Line 3.png" alt="Line">
+                    </div>
+                </div>
+                <div class="contact_submit">
+                    <p>SUBMIT</p>
+                </div>
+            </div>
+            <div class="contact_right">
+                <div class="contact_number">
+                    <p>(255) 352-6285</p>
+                </div>
+                <div class="contact_address">
+                    <div>
+                        <p>ADDRESS</p>
+                        <p class="contact_p">1234-street near marina square</p>
+                    </div>
+                    <div>
+                        <p>OPENING HOURS</p>
+                        <p class="contact_p">Daily 9:00 am to 12:00pm</p>
+                    </div>
+                    <div>
+                        <p>EMAIL</p>
+                        <p class="contact_p">Pizzeria_query@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </contact>
+
+    <footer>
+        <div class="footer_word">
+            <div class="footer_one">
+                <p class="footer_h">LEGAL</p>
+                <p class="footer_e t">Disclaimer</p>
+                <p class="footer_e">Terms and Condition</p>
+                <p class="footer_e">Privacy Policy</p>
+            </div>
+            <div class="footer_two">
+                <p class="footer_h">COMPANY</p>
+                <p class="footer_e t">Blog</p>
+                <p class="footer_e">Investor</p>
+                <p class="footer_e">Feedback</p>
+            </div>
+        </div>
+        <div class="footer_three">
+            <img src="./facebook.png" alt="Facebook Logo">
+            <img src="./Instagram.png" alt="Instagram Logo">
+            <img src="./Twitter.png" alt="Twitter Logo">
+        </div>
+    </footer>
+</body>
+</html>
