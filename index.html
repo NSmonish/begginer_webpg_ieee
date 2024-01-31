@@ -31,11 +31,16 @@
             display: flex;
             gap: 19px;
         }
-        p.footer_e {
-            font-size: 16px;
+        .footer_three>img:hover {
+            border-radius: 12px;
+            background-color: white;
         }
         p.footer_e {
+            font-size: 16px;
             margin-top: 17px;
+        }
+        p.footer_e:hover {
+            color: black;
         }
         p.footer_h {
             margin-bottom: 0;
@@ -78,6 +83,15 @@
         .name_mail {
             display: flex;
             gap: 93px;
+        }
+        .contact_textbox {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid black;
+            margin: 0px;
+        }
+        #message>.contact_textbox {
+            width: 100%;
         }
         .contact_number {
             color: #FFA500;
@@ -299,16 +313,16 @@
                     <div class="name_mail">
                         <div id="name">
                             <p>Name</p>
-                            <img src="./Line 1.png" alt="Line">
+                            <input class="contact_textbox" type="text">
                         </div>
                         <div id="email">
                             <p>Email Address</p>
-                            <img src="./Line 2.png" alt="Line">
+                            <input class="contact_textbox" type="text">
                         </div>
                     </div>
                     <div id="message">
                         <p class="contact_message">Message</p>
-                        <img src="./Line 3.png" alt="Line">
+                        <input class="contact_textbox" type="text"> 
                     </div>
                 </div>
                 <div class="contact_submit">
